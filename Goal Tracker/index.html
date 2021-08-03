@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<style media="screen">
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+checkbox {
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'Food Exercise Family Health Work Other'
+    'Food Exercise Family Health Work Other'
+    'Food Exercise Family Health Work Other';
+  grid-gap: 10px;
+  background-color: gray;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: lightgray;
+  padding:
+  font-size:
+}
+
+.item1 { grid-area: Food; }
+.item2 { grid-area: Exercise; }
+.item3 { grid-area: Family; }
+.item4 { grid-area: Health; }
+.item5 { grid-area: Work; }
+.item6 { grid-area: Other; }
+
+button.link {
+  background:none;border:none;
+}
+
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+#submit-form {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+</style>
+  <head>
+    <meta charset="utf-8">
+    <title>Daily Goal Tracker</title>
+
+    <link rel="icon"
+      href="favicontarget.jpeg">
+
+  </head>
+  <h1>Daily Goal Tracker</h1>
+  <form class="" action="process.html" method="post">
+
+  <input type="submit" id="submit-form" name="submit" value="Submit Form">
+
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="newuser.html">New User</a>
+    <a href="signin.html">Sign In</a>
+    <a href="Statistics.html">Statistics</a>
+  </div>
+</div>
+
+  </div>
+
+  <p>This form is to be used to track your goals. Place a checkmark next to each
+    of these items you have completed today. Overtime you should see an improvement.</p>
+
+  <body>
+    <div class="grid-container">
+      <div class="item1">
+        <h2>Food</h2>
+
+          <input type="checkbox" id="checkbox" value="1">
+          <label for="Eat Healthy Breakfast">Eat Healthy Breakfast</label><br>
+
+          <input type="checkbox" id="checkbox" value="1">
+          <label for="Eat Healthy Lunch">Eat Healthy Lunch</label><br>
+
+          <input type="checkbox" id="checkbox" value="1">
+          <label for="Eat Healthy Dinner">Eat Healthy Dinner</label><br>
+
+          <input type="checkbox" id="checkbox" value="1">
+          <label for="Eat Healthy Snack">Eat Healthy Snack</label><br>
+
+          <input type="checkbox" id="checkbox" value="1">
+          <label for="Ate an apple">Ate an apple</label><br>
+
+          <input type="checkbox" id="checkbox" value="1">
+          <label for="Drank Tea">Drank Tea</label><br>
+
+          <input type="checkbox" id="checkbox" value="1">
+          <label for="Didn't eat PopTarts">Didn't eat PopTarts</label><br>
+
+          <input type="checkbox" id="checkbox" value="1">
+          <label for="Ate salad">Ate salad</label><br>
+      </div>
+
+      <div class="item2">
+        <h2>Exercise</h2>
+
+          <input type="checkbox" id="checkbox" value="1">
+          <label for="Prepare Gym clothes">Prepare Gym clothes</label><br>
+
+          <input type="checkbox" id="checkbox" value="1">
+          <label for="Go to Gym">Go to Gym</label><br>
+
+          <input type="checkbox" id="checkbox" value="1">
+          <label for="Take a walk">Take a Walk</label><br>
+
+      </div>
+
+      <div class="item3">
+        <h2>Family</h2>
+          <input type="checkbox" id="checkbox" value="1">
+          <label for="Track Calories">Read to Kids</label><br>
+
+          <input type="checkbox" id="checkbox" value="1">
+          <label for="Clean up Toys">Clean up Toys</label><br>
+
+          <input type="checkbox" id="checkbox" value="1">
+          <label for="Do Dishes">Do Dishes</label><br>
+
+          <input type="checkbox" id="checkbox" value="1">
+          <label for="Laugh Daily">Laugh Daily</label><br>
+
+      </div>
+
+      <div class="item4">
+        <h2>Health</h2>
+
+          <input type="checkbox" id="checkbox" value="1">
+          <label for="Meditate">Meditate</label><br>
+
+          <input type="checkbox" id="checkbox" value="1">
+          <label for="Memory Training">Memory Training</label><br>
+
+          <input type="checkbox" id="checkbox" value="1">
+          <label for="Stretch">Stretch</label><br>
+
+          <input type="checkbox" id="checkbox" value="1">
+          <label for="Practice Posture">Practice Posture</label><br>
+
+          <input type="checkbox" id="checkbox" value="1">
+          <label for="Practice Running Form">Practice Running Form</label><br>
+
+          <input type="checkbox" id="checkbox" value="1">
+          <label for="Sleep Well">Sleep Well</label><br>
+
+          <input type="checkbox" id="checkbox" value="1">
+          <label for=""Take Vitamins">Take Vitamins</label><br>
+
+      </div>
+
+      <div class="item5">
+        <h2>Work</h2>
+
+        <input type="checkbox" id="checkbox" value="1">
+        <label for="Wake up on Time">Wake up on Time</label><br>
+
+        <input type="checkbox" id="checkbox" value="1">
+        <label for="Practice Typing">Practice Typing</label><br>
+
+        <input type="checkbox" id="checkbox" value="1">
+        <label for="Read Something">Read Something</label><br>
+
+        <input type="checkbox" id="checkbox" value="1">
+        <label for="Work Well">Work Well</label><br>
+
+      </div>
+
+      <div class="item6">
+        <h2>Other</h2>
+
+        <input type="checkbox" id="checkbox" value="1">
+        <label for="Weigh Self">Weigh Self</label><br>
+
+        <input type="checkbox" id="checkbox" value="1">
+        <label for="Study Bible">Study Bible</label><br>
+
+        <input type="checkbox" id="checkbox" value="1">
+        <label for="Track Calories">Track Calories</label><br>
+
+        <input type="checkbox" id="checkbox" value="1">
+        <label for="Not using Phone at Night">Not using Phone at Night</label><br>
+
+        <input type="checkbox" id="checkbox" value="1">
+        <label for="Impove Life">Impove Life</label><br>
+
+        <input type="checkbox" id="checkbox" value="1">
+        <label for="Fill out this Form">Fill out this Form</label><br>
+
+      </div>
+
+    </div>
+  </body>
+    </form>
+</html>
